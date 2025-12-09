@@ -1,0 +1,72 @@
+body{
+    max-width: 100vw !important;
+}
+.cursor{
+    width: 2px;
+    height: 3rem;
+    background-color: white;
+    animation-name: typing;
+    animation-timing-function: ease;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+}
+
+.home-img .img{
+    animation: image 1.5s infinite alternate;
+}
+
+.about-img .rotate{
+    width: 150%;
+    height: 100%;
+    background-color: #1549e6;
+    animation: rotate 4s linear infinite;
+}
+
+.rotate{
+    background-color: #1549e6;
+    transform: rotate(-45deg);
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    } 100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes image{
+    from{
+        transform: translateY(0);
+    } to{
+        transform: translateY(20%);
+    }
+}
+
+@keyframes typing{
+    0%, 100%{
+        transform: scaleY(1);
+    } 50%{
+        transform: scaleY(0);
+    }
+}
+
+@media(max-width: 1023px){
+    .nav-menu{
+        position: fixed;
+        top: 12vh;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        transform: scaleY(0);
+        transform-origin: 0 0;
+    }
+    .nav-menu a{
+        margin: 10px;
+    }
+    .nav-menu.active{
+        transform: scaleY(1);
+    }
+}

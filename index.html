@@ -1,0 +1,335 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 overflow-x-hidden">
+    <nav
+        class="w-full bg-gray-900 flex items-center grid grid-cols-12 gap-4 p-5 sticky top-0 left-0 right-0 z-20 duration-500">
+        <div class="nav-icon col-span-8 max-lg:col-span-11">
+            <a href="" class="text-white text-lg font-semibold">My <span class="text-blue-700">Portfolio</span></a>
+        </div>
+        <div
+            class="nav-menu grid grid-flow-col grid-rows-1 gap-1 col-span-4 max-lg:bg-blue-700 max-md:w-45 transition duration-700">
+            <a href="#home" class="text-sm font-semibold text-white hover:text-blue-700 max-lg:hover:text-gray-400">Home</a>
+            <a href="#about" class="text-sm font-semibold text-white hover:text-blue-700 max-lg:hover:text-gray-400">About</a>
+            <a href="#service" class="text-sm font-semibold text-white hover:text-blue-700 max-lg:hover:text-gray-400">Service</a>
+            <a href="#project" class="text-sm font-semibold text-white hover:text-blue-700 max-lg:hover:text-gray-400">Project</a>
+            <a href="#contact" class="text-sm font-semibold text-white hover:text-blue-700 max-lg:hover:text-gray-400">Contact</a>
+        </div>
+        <div class="nav-extra hidden max-lg:block relative col-span-1">
+            <span class="block w-[25px] h-[3px] bg-white my-1"></span>
+            <span class="block w-[25px] h-[3px] bg-white my-1"></span>
+            <span class="block w-[25px] h-[3px] bg-white my-1"></span>
+            <input type="checkbox" id="check-nav" class="cursor-pointer absolute top-0 left-0 right-0 bottom-0 opacity-0">
+        </div>
+    </nav>
+    <main>
+        <section
+            class="grid grid-cols-2 p-5 min-h-96 max-md:grid-cols-1 grid-flow-row max-md:flex max-md:flex-col-reverse"
+            id="home">
+            <div class="home-desc flex flex-col justify-center max-md:mt-8" data-aos="fade-right"
+                data-aos-duration="1200" data-aos-offset="300">
+                <h3 class="text-white font-semibold text-3xl max-md:text-2xl max-sm:text-lg">Hello, I'm</h3>
+                <div class="typing flex my-4">
+                    <div class="typing-teks text-5xl font-semibold text-blue-700 max-md:text-4xl max-sm:text-3xl"></div>
+                    <div class="cursor"></div>
+                </div>
+                <p class="text-white text-justify max-md:text-sm">As a UI/UX Designer and Full Stack Developer, I not
+                    only design
+                    intuitive user experiences, but also build efficient and robust digital architectures behind them.
+                </p>
+                <div class="grid grid-cols-12 gap-2 my-3">
+                    <a href=""
+                        class="text-blue-700 border-2 border-blue-700 py-2 text-center rounded-full hover:bg-blue-700 hover:text-white transition duration-500 max-2xl:border-none max-2xl:text-lg"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href=""
+                        class="text-blue-700 border-2 border-blue-700 py-2 text-center rounded-full hover:bg-blue-700 hover:text-white transition duration-500 max-2xl:border-none max-2xl:text-lg"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href=""
+                        class="text-blue-700 border-2 border-blue-700 py-2 text-center rounded-full hover:bg-blue-700 hover:text-white transition duration-500 max-2xl:border-none max-2xl:text-lg"><i
+                            class="bi bi-tiktok"></i></a>
+                    <a href=""
+                        class="text-blue-700 border-2 border-blue-700 py-2 text-center rounded-full hover:bg-blue-700 hover:text-white transition duration-500 max-2xl:border-none max-2xl:text-lg"><i
+                            class="bi bi-linkedin"></i></a>
+                    <div class="col-span-10 mt-3 grid grid-cols-4 gap-3">
+                        <a href=""
+                            class="bg-blue-700 rounded-sm p-2 text-white font-semibold text-center max-2xl:col-span-2 max-sm:text-sm">Download
+                            CV</a>
+                        <a href=""
+                            class="border border-blue-700 rounded-sm p-2 text-blue-700 font-semibold text-center hover:bg-blue-700 hover:text-white transition duration-500 max-2xl:col-span-2 max-sm:text-sm">Contact
+                            Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="home-img" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="400">
+                <div
+                    class="img w-70 h-70 border-3 border-blue-700 overflow-hidden rounded-full m-auto max-md:w-60 max-md:h-60">
+                    <img src="img/portfolio.png" class="brightness-140 w-98" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-10 gap-4 p-5 my-8 max-lg:grid-cols-2 max-md:grid-cols-1 overflow-x-hidden"
+            id="about">
+            <div class="about-img overflow-hidden rounded-md p-3 relative min-h-85 col-span-4 flex justify-center items-center max-2xl:h-80 max-lg:col-span-1 max-md:col-span-1 max-md:h-40"
+                data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+                <div class="rotate absolute z-5 blur-xl"></div>
+                <div class="absolute z-10 top-2 right-2 left-2 bottom-2 overflow-hidden">
+                    <img src="img/portfolio.jpg" class="w-[120] rounded-md" alt="">
+                </div>
+            </div>
+            <div class="about-desc col-span-6 ml-7 max-2xl:col-span-5 max-lg:col-span-1 max-md:ml-0"
+                data-aos="fade-left" data-aos-duration="1000" data-aos-offset="400">
+                <p class="text-4xl font-bold text-white"><span class="text-blue-700">About</span> Me</p>
+                <p class="text-white mt-6 text-justify">
+                    Hello! I'm Hafiz, a UI/UX Designer who transitioned into a Full Stack Developer—a combination that
+                    allows me to deliver a complete and uncompromising product vision.
+                </p>
+                <p class="text-white mt-6 text-justify">
+                    As a Designer, I believe that good digital products should be centered on empathy and a deep
+                    understanding of users. I focus on seamless user flows, logical information architecture, and
+                    aesthetic and accessible interface designs.
+                </p>
+                <p class="text-white mt-6 text-justify">
+                    As a Developer, I am skilled at translating those designs into clean and structured code.
+                </p>
+                <div class="grid grid-cols-8 max-2xl:grid-cols-6 gap-3 mt-6">
+                    <p
+                        class="border border-blue-700 rounded-sm p-2 text-blue-700 font-semibold text-center hover:bg-blue-700 hover:text-white transition duration-500">
+                        HTML</p>
+                    <p
+                        class="border border-blue-700 rounded-sm p-2 text-blue-700 font-semibold text-center hover:bg-blue-700 hover:text-white transition duration-500">
+                        CSS</p>
+                    <p
+                        class="border border-blue-700 rounded-sm p-2 text-blue-700 font-semibold text-center hover:bg-blue-700 hover:text-white transition duration-500">
+                        JS</p>
+                    <p
+                        class="border border-blue-700 rounded-sm p-2 text-blue-700 font-semibold text-center hover:bg-blue-700 hover:text-white transition duration-500">
+                        PHP</p>
+                    <p
+                        class="border border-blue-700 rounded-sm p-2 text-blue-700 font-semibold text-center hover:bg-blue-700 hover:text-white transition duration-500 col-span-2">
+                        BOOTSTRAP</p>
+                    <p
+                        class="border border-blue-700 rounded-sm p-2 text-blue-700 font-semibold text-center hover:bg-blue-700 hover:text-white transition duration-500 col-span-2">
+                        TAILWIND</p>
+                </div>
+                <a href=""
+                    class="bg-blue-700 rounded-sm p-2 text-blue-700 font-semibold text-center hover:bg-blue-700 text-white transition duration-500 col-span-2 inline-block mt-4">Explore
+                    My Service</a>
+            </div>
+        </section>
+
+        <section class="p-5 my-8 w-full grid grid-cols-12 overflow-hidden" id="service">
+            <p class="text-2xl text-white font-bold text-center col-span-12" data-aos="fade-left"
+                data-aos-duration="500">My Service</p>
+            <p class="text-4xl text-white font-bold text-center col-span-12" data-aos="fade-right"
+                data-aos-duration="500">What <span class="text-blue-700">Can I Do</span></p>
+            <div class="mt-8 flex justify-center col-span-12 gap-6 flex-wrap">
+                <div class="rounded-md relative p-3 overflow-hidden min-h-70 flex justify-center items-center w-60"
+                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="300">
+                    <div class="rotate absolute z-5 bg-blue-700 h-100 w-50 blur-xl"></div>
+                    <div class="absolute z-10 h-65 rounded-md w-55 bg-gray-100 p-5">
+                        <span class="block w-10 h-10 rounded-md bg-blue-700 flex justify-center items-center">
+                            <i class="bi bi-code-slash text-white text-2xl"></i>
+                        </span>
+                        <p class="text-xl my-2 font-bold">Web Programming</p>
+                        <p class="font-normal text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Possimus enim eum veritatis perspiciatis. </p>
+                    </div>
+                </div>
+                <div class="rounded-md relative p-3 overflow-hidden min-h-70 flex justify-center items-center w-60"
+                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="250" data-aos-delay="350">
+                    <div class="rotate absolute z-5 bg-blue-700 h-100 w-50 blur-xl"></div>
+                    <div class="absolute z-10 h-65 rounded-md w-55 bg-gray-100 p-5">
+                        <span class="block w-10 h-10 rounded-md bg-blue-700 flex justify-center items-center">
+                            <i class="bi bi-vector-pen text-white text-2xl"></i>
+                        </span>
+                        <p class="text-xl my-2 font-bold">Design Grapich</p>
+                        <p class="font-normal text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Possimus enim eum veritatis perspiciatis. </p>
+                    </div>
+                </div>
+                <div class="rounded-md relative p-3 overflow-hidden min-h-70 flex justify-center items-center w-60"
+                    data-aos="fade-up" data-aos-duration="1000" data-aos-offset="300" data-aos-delay="400">
+                    <div class="rotate absolute z-5 bg-blue-700 h-100 w-50 blur-xl"></div>
+                    <div class="absolute z-10 h-65 rounded-md w-55 bg-gray-100 p-5">
+                        <span class="block w-10 h-10 rounded-md bg-blue-700 flex justify-center items-center">
+                            <i class="bi bi-motherboard text-white text-2xl"></i>
+                        </span>
+                        <p class="text-xl my-2 font-bold">UI/UX Designer</p>
+                        <p class="font-normal text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Possimus enim eum veritatis perspiciatis. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5 my-8 w-full grid grid-cols-2" id="project">
+            <div class="col-span-2">
+                <p class="text-2xl font-bold text-center text-white" data-aos="fade-left"
+                data-aos-duration="500">My Project</p>
+                <p class="text-4xl font-bold text-center text-white" data-aos="fade-right"
+                data-aos-duration="500">What Do You <span class="text-blue-700"> Get From
+                        Me</span></p>
+            </div>
+            <div class="col-span-2 grid my-8">
+                <a href=""
+                    class="py-2 px-3 border border-2 border-blue-700 font-semibold text-white rounded-md hover:bg-blue-700 transition duration-500 justify-self-end">See
+                    More</a>
+            </div>
+            <div class="col-span-2 grid gap-8 grid-cols-3 max-md:grid-cols-2 max-md:flex max-md:justify-between max-md:flex-wrap">
+                <div class="rounded-lg overflow-hidden" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-offset="300" data-aos-delay="300">
+                    <div class="w-full max-h-80 overflow-hidden">
+                        <img src="img/projects/project.png" class="w-full" alt="">
+                    </div>
+                    <div class="w-full flex justify-between bg-gray-100 p-5">
+                        <div class="w-90">
+                            <p class="text-2xl font-bold text-gray-800 mb-3">Green Tea (Landing Page & Branding)</p>
+                            <p class="text-gray-600">3 Day Ago</p>
+                        </div>
+                        <div class="w-10 flex items-end">
+                            <i class="bi bi-arrow-right-circle text-blue-700 text-4xl"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-lg overflow-hidden" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-offset="300" data-aos-delay="400">
+                    <div class="w-full max-h-80 overflow-hidden">
+                        <img src="img/projects/project 1.png" class="w-full" alt="">
+                    </div>
+                    <div class="w-full flex justify-between bg-gray-100 p-5">
+                        <div class="w-90">
+                            <p class="text-2xl font-bold text-gray-800 mb-3">Coffee House (Multi Page & Branding)</p>
+                            <p class="text-gray-600">13 Day Ago</p>
+                        </div>
+                        <div class="w-10 flex items-end">
+                            <i class="bi bi-arrow-right-circle text-blue-700 text-4xl"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-lg overflow-hidden" data-aos="fade-up" data-aos-duration="1000"
+                    data-aos-offset="300" data-aos-delay="500">
+                    <div class="w-full max-h-80 overflow-hidden">
+                        <img src="img/projects/project 2.png" class="w-full" alt="">
+                    </div>
+                    <div class="w-full flex justify-between bg-gray-100 p-5">
+                        <div class="w-90">
+                            <p class="text-2xl font-bold text-gray-800 mb-3">FurniQ (Landing Page & Branding)</p>
+                            <p class="text-gray-600">1 Day Ago</p>
+                        </div>
+                        <div class="w-10 flex items-end">
+                            <i class="bi bi-arrow-right-circle text-blue-700 text-4xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5 my-8 w-full">
+            <p class="text-2xl text-white font-bold text-center" data-aos="fade-left"
+                data-aos-duration="500">Testimonials</p>
+            <p class="text-4xl text-white font-bold text-center" data-aos="fade-right"
+                data-aos-duration="500">What <span class="text-blue-700">Client</span> Say About My <span class="text-blue-700">Work</span></p>
+            <div class="w-full grid grid-cols-3 gap-6 my-8 max-md:grid-cols-1">
+                <div class="bg-white rounded-md p-5" data-aos="fade-up"
+                data-aos-duration="500" data-aos-offset="100">
+                    <div class="flex justify-between gap-3">
+                        <div class="w-24 h-24 rounded-full border border-2 border-blue-700 overflow-hidden flex justify-center items-center">
+                            <img src="img/testimonials/gambar (1).jpg" alt="">
+                        </div>
+                        <div class="flex flex-col w-60">
+                            <p class="text-lg font-semibold">Christopher</p>
+                            <p class="text-sm font-normal text-gray-600">CEO Industries</p>
+                            <div class="gap-3">
+                                <i class="bi bi-star-fill text-yellow-300"></i>
+                                <i class="bi bi-star-fill text-yellow-300"></i>
+                                <i class="bi bi-star-fill text-yellow-300"></i>
+                                <i class="bi bi-star-fill text-yellow-300"></i>
+                                <i class="bi bi-star-fill text-yellow-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="bi bi-quote text-gray-600 text-4xl"></i>
+                    <p class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum facere magni reprehenderit veritatis obcaecati quod ipsam natus omnis eius. Eaque voluptatum distinctio debitis corrupti unde laudantium mollitia dolores autem dolore!</p>
+                </div>
+                <div class="bg-white rounded-md p-5" data-aos="fade-up"
+                data-aos-duration="500" data-aos-offset="200">
+                    <div class="flex justify-between gap-3">
+                        <div class="w-24 h-24 rounded-full border border-2 border-blue-700 overflow-hidden flex justify-center items-center">
+                            <img src="img/testimonials/gambar (2).jpg" alt="">
+                        </div>
+                        <div class="flex flex-col w-60">
+                            <p class="text-lg font-semibold">Grace</p>
+                            <p class="text-sm font-normal text-gray-600">Project Manager</p>
+                            <div class="gap-3">
+                                <i class="bi bi-star-fill text-yellow-300"></i>
+                                <i class="bi bi-star-fill text-yellow-300"></i>
+                                <i class="bi bi-star-fill text-yellow-300"></i>
+                                <i class="bi bi-star-fill text-yellow-300"></i>
+                                <i class="bi bi-star-fill text-yellow-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="bi bi-quote text-gray-600 text-4xl"></i>
+                    <p class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum facere magni reprehenderit veritatis obcaecati quod ipsam natus omnis eius. Eaque voluptatum distinctio debitis corrupti unde laudantium mollitia dolores autem dolore!</p>
+                </div>
+                <div class="bg-white rounded-md p-5" data-aos="fade-up"
+                data-aos-duration="500" data-aos-offset="300">
+                    <div class="flex justify-between gap-3">
+                        <div class="w-24 h-24 rounded-full border border-2 border-blue-700 overflow-hidden flex justify-center items-center">
+                            <img src="img/testimonials/gambar (3).jpg" alt="">
+                        </div>
+                        <div class="flex flex-col w-60">
+                            <p class="text-lg font-semibold">Albert</p>
+                            <p class="text-sm font-normal text-gray-600">Leader of Teams</p>
+                            <div class="gap-3">
+                                <i class="bi bi-star-fill text-yellow-300"></i>
+                                <i class="bi bi-star-fill text-yellow-300"></i>
+                                <i class="bi bi-star-fill text-yellow-300"></i>
+                                <i class="bi bi-star-fill text-yellow-300"></i>
+                                <i class="bi bi-star-fill text-yellow-300"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="bi bi-quote text-gray-600 text-4xl"></i>
+                    <p class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum facere magni reprehenderit veritatis obcaecati quod ipsam natus omnis eius. Eaque voluptatum distinctio debitis corrupti unde laudantium mollitia dolores autem dolore!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5 my-8 w-full flex justify-center items-center flex-col gap-3" id="contact">
+            <p class="text-2xl text-white font-semibold">Contact <span class="text-blue-700">Me</span></p>
+            <p class="text-4xl text-white font-bold">How to Contact <span class="text-blue-700">Me</span></p>
+            <p class="text-white">You can contact me at the number below.</p>
+            <p class="px-3 py-2 bg-white rounded-full font-semibold w-80"><i class="bi bi-whatsapp mr-2"></i>+62 851-1734-1708</p>
+            <p class="px-3 py-2 bg-white rounded-full font-semibold w-80"><i class="bi bi-instagram mr-2"></i>@hfz.178</p>
+            <p class="px-3 py-2 bg-white rounded-full font-semibold w-80"><i class="bi bi-envelope-at mr-2"></i>hafizirfanarif@gmail.com</p>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        const navMenu = document.querySelector(".nav-menu")
+        const checkNav = document.querySelector("#check-nav")
+        checkNav.addEventListener("change", function () {
+            if (this.checked == true) {
+                navMenu.classList.add("active")
+            } else {
+                navMenu.classList.remove("active")
+            }
+        })
+    </script>
+</body>
+
+</html>
